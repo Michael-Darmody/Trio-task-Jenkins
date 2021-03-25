@@ -2,11 +2,11 @@ version: "3.8"
 services: 
   flask-app:
     container_name: flask-app
-    image: trio-task-app
+    image: moddz03/trio-task-app
     build: ./flask-app
   mysql:
     container_name: mysql
-    image: trio-task-db
+    image: moddz03/trio-task-db
     build: ./db
     enviroment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
